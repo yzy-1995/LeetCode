@@ -14,8 +14,6 @@ package com.yzy.simple;
  * 0：我选出的数字和你猜的数字一样。恭喜！你猜对了！pick == num
  * 返回我选出的数字。
  *
- *
- *
  * 示例 1：
  *
  * 输入：n = 10, pick = 6
@@ -56,7 +54,7 @@ public class GuessNumberHigherorLower {
         return left;
     }
 
-    private int guess (int number){
-        return 0;
+    private int guess (int n){
+        return n;
     }
 }
