@@ -22,6 +22,26 @@ public class ArrangingCoins {
         System.out.println(arrangingCoins.arrangeCoins(9));
     }
     public int arrangeCoins(int n) {
+        if (n < 1) {
+            return 0;
+        }
+
+        int left = 1;
+        int right = n;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            long total = (long) mid * (mid + 1) / 2;
+            if (total == n) {
+                return mid;
+            } else if (total < n) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+        return right;
+    }
+    public int arrangeCoins1(int n) {
         int rows = 0;
         int coinsInRow = 1;
 
