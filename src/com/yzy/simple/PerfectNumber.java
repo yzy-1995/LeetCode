@@ -29,14 +29,17 @@ public class PerfectNumber {
         }
 
         int sum = 1;
-        for (int i = 2; i <= Math.sqrt(num); i++) {
+        int sqrt = (int) Math.sqrt(num);
+        for (int i = 2; i <= sqrt; i++) {
             if (num % i == 0) {
                 sum += i;
-                if (i != num / i) {
-                    sum += num / i;
+                int quotient = num / i;
+                if (i != quotient) {
+                    sum += quotient;
                 }
             }
         }
+
         return sum == num;
     }
 }
