@@ -6,12 +6,12 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
-.idea/
+.idea/**
 LeetCode.iml
-out/
+out/**
 checkstyle-idea.xml
 LeetCode.iml
 misc.xml
 modules.xml
 workspace.xml
-/sonarlint
+
