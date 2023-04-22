@@ -1,5 +1,7 @@
 package com.yzy.simple;
 
+import java.util.List;
+
 /**
  * ClassName: BlackAndWhiteCheckerboardPainting
  * Description:
